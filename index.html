@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dictionary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div>
+      <br>
+      <h1>Dictionary</h1>
+      <label>In this dictionary words are case-insensitive</label>
+      <br>
+    </div>
+    <div class="container fluid">
+      <div class="row">
+        <div class="col">
+          <p>Add a word to your dictionary</p>
+        </div>
+        <div class="col">
+          <p>Check if a word is in your dictionary</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input id="addWordInput" class="form-control" type="text" placeholder="Type a word and click 'Add'">
+          <br>
+          <button id="addButton" class="btn btn-secondary" onclick="addWord()">Add</button>
+        </div>
+        <div class="col">
+          <input id="checkWordInput" class="form-control" type="text" placeholder="Type a word and click 'Check'">
+          <br>
+          <button id="checkButton" class="btn btn-secondary" onclick="checkWord()">Check</button>
+        </div>
+      </div>
+      <br><br>
+      <div id="display" class="row">
+        <p id="displayText"></p>
+      </div>
+    </div>    
+    <script type="text/javascript" src="js-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
