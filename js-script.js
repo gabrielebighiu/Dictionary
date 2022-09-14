@@ -23,7 +23,7 @@ function findWord(word) {
     return false;
 }
 
-
+// Checks if the word the user inputs is in the dictionary
 function checkWord() {
     if (findWord(document.getElementById("checkWordInput").value.toUpperCase())) {
         displayText.innerHTML = "The searched word is in the dictionary";
