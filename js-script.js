@@ -6,12 +6,10 @@ function addWord() {
     if (findWord(document.getElementById("addWordInput").value.toUpperCase())) {
         displayText.innerHTML = "This word has already been added to the ditionary";
         document.getElementById("display").appendChild(displayText);
-        //window.alert(1);
     } else {
         words[words.length] = document.getElementById("addWordInput").value.toUpperCase();
         displayText.innerHTML = "This word has been added to the dictionary";
         document.getElementById("display").appendChild(displayText);
-        //window.alert(2);
     }
 }
 
